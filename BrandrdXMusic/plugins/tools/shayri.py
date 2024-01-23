@@ -136,7 +136,7 @@ async def mentionall(client, message):
         if usr.user.is_bot:
             continue
         usrnum += 1
-        usrtxt += f"{message.from_user.mention}"
+        usrtxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
 
         if usrnum == 1:
             if mode == "text_on_cmd":
